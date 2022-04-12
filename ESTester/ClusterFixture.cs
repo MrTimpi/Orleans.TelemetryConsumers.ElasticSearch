@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Orleans;
 using Orleans.Hosting;
-using Orleans.Runtime;
-using Orleans.Storage;
-using Orleans.TestingHost;
-using Orleans.Telemetry;
-using Xunit.Abstractions;
 using Orleans.TelemetryConsumers.ElasticSearch;
+using Orleans.TestingHost;
+using System;
+using System.Collections.Generic;
+using Xunit.Abstractions;
 
 namespace ESTester
 {
@@ -122,7 +119,7 @@ namespace ESTester
 
                     _esEndpoint = config[nameof(ESEndpoint)];
 
-                //hostBuilder.AddElasticsearchTelemetryConsumer(new Uri(_esEndpoint));
+                    //hostBuilder.AddElasticsearchTelemetryConsumer(new Uri(_esEndpoint));
                     //// extract the fake services from the silo so unit tests can access them
                     //GrainStorageGroups[clusterId].Add(provider.GetService<FakeGrainStorage>());
                     //TimerRegistryGroups[clusterId].Add(provider.GetService<FakeTimerRegistry>());

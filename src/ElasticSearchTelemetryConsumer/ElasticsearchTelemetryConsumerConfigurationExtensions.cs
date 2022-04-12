@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Orleans.Configuration;
 using Orleans.Hosting;
-using Orleans.Telemetry;
 using System;
 
 namespace Orleans.TelemetryConsumers.ElasticSearch

@@ -1,11 +1,10 @@
 ﻿using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
 using Orleans;
 using Orleans.Hosting;
-using System.Threading.Tasks;
 using Orleans.TelemetryConsumers.ElasticSearch;
-using Orleans.TelemetryConsumers;
+using System;
+using System.Threading.Tasks;
 
 namespace TestHost
 {
